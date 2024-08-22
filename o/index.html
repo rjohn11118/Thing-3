@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test</title>
+</head>
+<body>
+<div class="moveme">
+  <h1>This was made in html</h1>
+  <p>and css.</p>
+</div>
+
+<div class="centered">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="50" height="50">
+  </div>
+<style> 
+
+body {
+  animation-name: animation;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+.centered {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 340px;
+    animation: pulse 1.5s infinite;
+}
+.moveme {
+margin-top: 200px;
+font-size: px;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes animation {
+    0% { background-color: red; }
+    12.5% { background-color: orange; }
+    25% { background-color: yellow; }
+    37.5% { background-color: green; }
+    50% { background-color: blue; }
+    62.5% { background-color: indigo; }
+    75% { background-color: violet; }
+    87.5% { background-color: indigo; }
+    100% { background-color: red; }
+}
+
+h1, p {
+  font-family: "Copperplate", serif;
+  text-shadow: 2px 2px 5px white;
+  text-align: center;
+  position: relative;
+  animation: move 3s infinite;
+}
+@keyframes move {
+  0% {
+    transform: rotate(0deg) translateX(0) translateY(0);
+  }
+  100% {
+    transform: rotate(360deg) translateX(0) translateY(0);
+  }
+}
+
+
+</style>
+</style>
+</body>
+</html>
